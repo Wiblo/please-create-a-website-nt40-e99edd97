@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin, ChevronRight, ArrowRight, Activity } from "lucide-react"
+import Image from "next/image"
+import { Mail, Phone, MapPin, ChevronRight, ArrowRight } from "lucide-react"
 import {
   businessInfo,
   getGoogleMapsDirectionsUrl,
@@ -29,8 +30,14 @@ export function Footer() {
             {/* Business Info */}
             <div className="space-y-4">
               <div className="flex items-end space-x-2">
-                <div className="mb-4 h-12 w-12 flex-shrink-0 sm:h-14 sm:w-14 flex items-center justify-center rounded-full bg-primary/10">
-                  <Activity className="h-6 w-6 sm:h-7 sm:w-7 text-primary" aria-hidden="true" />
+                <div className="mb-4 h-12 w-12 flex-shrink-0 sm:h-14 sm:w-14 rounded-xl overflow-hidden">
+                  <Image
+                    src="/logo.png"
+                    alt="Proactive Therapy logo"
+                    width={56}
+                    height={56}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <div className="min-w-0 pb-0.5">
                   <h3 className="text-lg font-semibold leading-tight text-foreground sm:text-2xl">
