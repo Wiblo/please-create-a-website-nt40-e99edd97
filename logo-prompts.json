@@ -1,0 +1,30 @@
+[
+  {
+    "prompt": "Minimalist app icon for physiotherapy clinic: A clean white human silhouette in a dynamic forward-stride walking pose, arms slightly extended for balance, suggesting movement and recovery. Solid deep purple (#6d28d9) background, pure white figure. No gradients, no shadows, no text. Flat geometric style. Full-bleed square canvas, figure centered and large.",
+    "filename": "logo-motion.png",
+    "model": "flux-kontext-max",
+    "aspectRatio": "square",
+    "style": "minimalism"
+  },
+  {
+    "prompt": "Minimalist app icon for physiotherapy and healing brand: Abstract vertical spine symbol made of 5 curved white dots or nodes connected by a gentle flowing white curve, like a backbone or chain of vertebrae. Elegant, clean, medical. Deep rich purple (#6d28d9) square background. White symbol only. No text, no gradients. Full-bleed, centered, symbol fills most of canvas.",
+    "filename": "logo-spine.png",
+    "model": "flux-kontext-max",
+    "aspectRatio": "square",
+    "style": "minimalism"
+  },
+  {
+    "prompt": "Minimalist app icon for a physiotherapy wellness brand: A single white abstract human figure with arms raised overhead in a stretch or victory pose, like a person celebrating recovery. Body is a simple geometric white silhouette — oval head, rectangular torso, arms angled up. Deep vibrant purple (#6d28d9) background. No text. No gradients. Flat clean icon. Full-bleed square.",
+    "filename": "logo-stretch.png",
+    "model": "flux-kontext-max",
+    "aspectRatio": "square",
+    "style": "minimalism"
+  },
+  {
+    "prompt": "Minimalist app icon for a physical therapy clinic: Abstract white cross symbol (medical/healthcare plus sign) with a subtle diagonal movement arrow integrated into one arm, suggesting active healing. Deep purple (#6d28d9) square background. Pure white shapes. No text, no shadows, no gradients. Swiss minimalism style. Full-bleed centered icon, shapes fill 80% of canvas.",
+    "filename": "logo-cross.png",
+    "model": "flux-kontext-max",
+    "aspectRatio": "square",
+    "style": "minimalism"
+  }
+]
