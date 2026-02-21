@@ -44,7 +44,7 @@ export function AboutPreview({ className }: AboutPreviewProps) {
 
               {/* Description */}
               <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-                Based in Sandhurst, Vitality Physiotherapy brings together a team of highly
+                Based in Johannesburg, Proactive Therapy brings together a team of highly
                 qualified physiotherapists dedicated to evidence-based care. Whether you are
                 recovering from surgery, managing chronic pain, or bouncing back from a sports
                 injury, our expert team creates personalised treatment plans designed around

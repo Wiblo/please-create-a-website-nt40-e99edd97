@@ -9,7 +9,7 @@ export interface AboutFullSectionProps {
 
 /**
  * Full about section for the dedicated about page.
- * Customized for Vitality Physiotherapy — Sandhurst, Johannesburg.
+ * Customized for Proactive Therapy — Johannesburg.
  */
 export function AboutFullSection({ className }: AboutFullSectionProps) {
   return (
@@ -52,9 +52,9 @@ export function AboutFullSection({ className }: AboutFullSectionProps) {
             {/* Paragraphs */}
             <div className="flex w-full flex-col gap-4">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Vitality Physiotherapy was founded with a clear purpose: to bring
+                Proactive Therapy was founded with a clear purpose: to bring
                 world-class physiotherapy to the heart of Johannesburg. Our modern
-                clinic in Sandhurst serves patients across Johannesburg North,
+                clinic in Johannesburg serves patients across Johannesburg North,
                 Sandton, Rosebank, and the surrounding northern suburbs.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">
@@ -123,7 +123,7 @@ export function AboutFullSection({ className }: AboutFullSectionProps) {
               <p className="text-lg leading-relaxed text-muted-foreground">
                 We are committed to ongoing professional development — regularly
                 attending workshops, courses, and conferences to stay at the
-                cutting edge of physiotherapy practice. When you come to Vitality,
+                cutting edge of physiotherapy practice. When you come to Proactive Therapy,
                 you benefit from the latest evidence-based techniques and
                 approaches.
               </p>

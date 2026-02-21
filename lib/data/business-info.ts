@@ -6,20 +6,20 @@
  */
 export const businessInfo = {
   // Core Business Details
-  name: "Vitality Physiotherapy",
+  name: "Proactive Therapy",
   tagline: "Restoring Movement, Rebuilding Lives",
   description:
-    "Vitality Physiotherapy is Johannesburg's trusted physiotherapy clinic, offering expert treatment for sports injuries, back and neck pain, post-surgical rehabilitation, and more. We help you move better and live pain-free.",
+    "Proactive Therapy is Johannesburg's trusted physiotherapy clinic, offering expert treatment for sports injuries, back and neck pain, post-surgical rehabilitation, and more. We help you move better and live pain-free.",
 
   // Contact Information
   phone: "+27 11 884 5500",
   phoneSecondary: "+27 82 456 7890",
-  email: "info@vitalityphysio.co.za",
+  email: "info@proactivetherapy.co.za",
 
   // Physical Location
   address: {
-    street: "14 Rivonia Road",
-    area: "Sandhurst",
+    street: "1 Jasmine Street",
+    area: "",
     city: "Johannesburg",
     state: "Gauteng",
     zip: "2196",
@@ -37,7 +37,7 @@ export const businessInfo = {
     /** Google Maps Place ID (find at: https://developers.google.com/maps/documentation/places/web-service/place-id) */
     placeId: "",
     /** Display name for the location on maps */
-    locationName: "Vitality Physiotherapy Johannesburg",
+    locationName: "Proactive Therapy Johannesburg",
     /** Google Maps API key (optional, for embed without place ID) */
     apiKey: "",
   },
@@ -58,15 +58,15 @@ export const businessInfo = {
 
   // Social Media (leave empty string if not used)
   social: {
-    facebook: "https://facebook.com/vitalityphysioJHB",
-    instagram: "https://instagram.com/vitalityphysioJHB",
+    facebook: "https://facebook.com/proactivetherapyJHB",
+    instagram: "https://instagram.com/proactivetherapyJHB",
     twitter: "",
-    linkedin: "https://linkedin.com/company/vitality-physiotherapy",
+    linkedin: "https://linkedin.com/company/proactive-therapy",
     youtube: "",
   },
 
   // Website
-  url: "https://vitalityphysio.co.za",
+  url: "https://proactivetherapy.co.za",
   logo: "/logo.png",
 
   // Booking (leave empty string if no booking system)

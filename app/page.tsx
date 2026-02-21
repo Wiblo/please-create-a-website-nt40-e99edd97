@@ -12,20 +12,20 @@ import { businessInfo } from "@/lib/data/business-info"
 export const metadata: Metadata = {
   title: `${businessInfo.name} | Physiotherapy in Johannesburg`,
   description:
-    "Vitality Physiotherapy in Sandhurst, Johannesburg. Expert treatment for sports injuries, back pain, post-surgical rehabilitation and more. Medical aid registered. Book your appointment today.",
+    "Proactive Therapy in Johannesburg. Expert treatment for sports injuries, back pain, post-surgical rehabilitation and more. Medical aid registered. Book your appointment today.",
   keywords: [
     "physiotherapy Johannesburg",
     "physiotherapist Sandton",
     "sports injury treatment Johannesburg",
     "back pain physiotherapy",
     "post-surgical rehabilitation Johannesburg",
-    "Sandhurst physiotherapy clinic",
+    "Johannesburg physiotherapy clinic",
     "medical aid physiotherapist",
   ],
   openGraph: {
     title: `${businessInfo.name} — Restoring Movement, Rebuilding Lives`,
     description:
-      "Expert physiotherapy in Sandhurst, Johannesburg. We treat sports injuries, back pain, post-surgical recovery, and more. Medical aid registered.",
+      "Expert physiotherapy in Johannesburg. We treat sports injuries, back pain, post-surgical recovery, and more. Medical aid registered.",
     url: businessInfo.url,
     type: "website",
     locale: "en_ZA",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 }
 
 /**
- * HOME PAGE — Vitality Physiotherapy
+ * HOME PAGE — Proactive Therapy
  *
  * Sections:
  * 1. HeroSection          — Headline + CTA with Unsplash physio image
@@ -64,19 +64,19 @@ export default function HomePage() {
 
       <TestimonialsSection
         title="What Our Patients Say"
-        subtitle="Hear from Johannesburg patients who have experienced the Vitality difference."
+        subtitle="Hear from Johannesburg patients who have experienced the Proactive Therapy difference."
       />
 
       <CTASection />
 
       <LocationSection
-        title="Visit Our Sandhurst Clinic"
+        title="Visit Our Clinic"
         bookingText="Book Now"
       />
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Everything you need to know about physiotherapy at Vitality. Still have questions? Give us a call."
+        subtitle="Everything you need to know about physiotherapy at Proactive Therapy. Still have questions? Give us a call."
       />
     </>
   )

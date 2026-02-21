@@ -22,7 +22,7 @@ export function CTASection({ className }: CTASectionProps) {
           <div className="absolute h-full w-full overflow-hidden rounded-4xl bg-muted">
             <Image
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&h=1080&fit=crop"
-              alt="Physiotherapy treatment session at Vitality Physiotherapy clinic"
+              alt="Physiotherapy treatment session at Proactive Therapy clinic"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1200px, 1400px"

@@ -8,10 +8,10 @@ import { CTASection } from "@/components/sections/cta/CTASection"
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Learn about ${businessInfo.name} — Johannesburg's trusted physiotherapy clinic in Sandhurst. Meet our HPCSA-registered team and discover our evidence-based approach to restoring movement and rebuilding lives.`,
+  description: `Learn about ${businessInfo.name} — Johannesburg's trusted physiotherapy clinic in Johannesburg. Meet our HPCSA-registered team and discover our evidence-based approach to restoring movement and rebuilding lives.`,
   openGraph: {
     title: `About Us | ${businessInfo.name}`,
-    description: `Learn about ${businessInfo.name} — Johannesburg's trusted physiotherapy clinic in Sandhurst. Meet our HPCSA-registered team and discover our evidence-based approach to restoring movement and rebuilding lives.`,
+    description: `Learn about ${businessInfo.name} — Johannesburg's trusted physiotherapy clinic in Johannesburg. Meet our HPCSA-registered team and discover our evidence-based approach to restoring movement and rebuilding lives.`,
   },
 }
 

@@ -53,7 +53,7 @@ export function FeaturesSection({ className }: FeaturesSectionProps) {
       icon: <MapPin className="h-6 w-6 text-primary" aria-hidden="true" />,
       title: "Convenient Location",
       description:
-        "Situated in Sandhurst, Johannesburg, our clinic is easily accessible from Sandton, Rosebank, Houghton, and surrounding northern suburbs.",
+        "Situated in Johannesburg, our clinic is easily accessible from Sandton, Rosebank, Houghton, and surrounding northern suburbs.",
     },
     {
       id: "appointments",
@@ -77,7 +77,7 @@ export function FeaturesSection({ className }: FeaturesSectionProps) {
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="font-heading mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            Why Johannesburg Chooses Vitality
+            Why Johannesburg Chooses Proactive Therapy
           </h2>
           <p className="text-lg text-muted-foreground">
             We combine clinical expertise, modern equipment, and genuine care to

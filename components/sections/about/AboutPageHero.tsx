@@ -9,7 +9,7 @@ export interface AboutPageHeroProps {
 /**
  * Page hero header for the About page.
  * Displays the page title, subtitle, and a values badge row.
- * Customized for Vitality Physiotherapy.
+ * Customized for Proactive Therapy.
  */
 export function AboutPageHero({ className }: AboutPageHeroProps) {
   const values = [
@@ -27,12 +27,12 @@ export function AboutPageHero({ className }: AboutPageHeroProps) {
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Eyebrow */}
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Sandhurst, Johannesburg
+            Johannesburg
           </p>
 
           {/* Main Heading */}
           <h1 className="font-heading max-w-3xl text-balance text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
-            About Vitality Physiotherapy
+            About Proactive Therapy
           </h1>
 
           {/* Subheadline */}

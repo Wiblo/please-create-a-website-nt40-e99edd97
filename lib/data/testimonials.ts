@@ -45,7 +45,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "1",
     name: "Thabo M.",
-    text: "After months of lower back pain from sitting at my desk all day, Vitality Physiotherapy gave me my life back. The team is professional, knowledgeable, and genuinely caring. Three sessions in and the pain is almost completely gone.",
+    text: "After months of lower back pain from sitting at my desk all day, Proactive Therapy gave me my life back. The team is professional, knowledgeable, and genuinely caring. Three sessions in and the pain is almost completely gone.",
     rating: 5,
     role: "Software Engineer, Sandton",
     source: "google",
@@ -65,7 +65,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "3",
     name: "Johan V.",
-    text: "The dry needling treatment worked wonders for my chronic shoulder tension. I had tried everything and nothing helped until I came to Vitality. Highly recommend the team here — they really know their craft.",
+    text: "The dry needling treatment worked wonders for my chronic shoulder tension. I had tried everything and nothing helped until I came to Proactive Therapy. Highly recommend the team here — they really know their craft.",
     rating: 5,
     role: "Marketing Director",
     source: "google",
@@ -95,7 +95,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "6",
     name: "Fatima A.",
-    text: "Very impressed with the level of care at Vitality. They took the time to properly assess my neck pain and created a treatment plan that actually addressed the root cause. No more waking up with stiffness every morning!",
+    text: "Very impressed with the level of care at Proactive Therapy. They took the time to properly assess my neck pain and created a treatment plan that actually addressed the root cause. No more waking up with stiffness every morning!",
     rating: 4,
     role: "Teacher",
     source: "google",
@@ -111,7 +111,7 @@ export const testimonials: Testimonial[] = [
 export const googleRating: GoogleRating = {
   average: 4.9,
   count: 214,
-  url: "https://g.page/r/vitality-physiotherapy-johannesburg",
+  url: "https://g.page/r/proactive-therapy-johannesburg",
 }
 
 // ============================================================================

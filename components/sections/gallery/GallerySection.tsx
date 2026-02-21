@@ -16,7 +16,7 @@ const showPlaceholder = false
 /** Gallery content - edit these values directly */
 const galleryContent = {
   title: "Our Clinic",
-  subtitle: "A modern, welcoming physiotherapy space in the heart of Sandhurst, Johannesburg.",
+  subtitle: "A modern, welcoming physiotherapy space in the heart of Johannesburg.",
   items: [
     {
       id: "gallery-1",

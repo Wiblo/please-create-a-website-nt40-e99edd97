@@ -17,8 +17,8 @@ export interface FeaturesSectionProps {
 }
 
 /**
- * About page features section — Why Choose Vitality Physiotherapy.
- * Customized for Vitality Physiotherapy, Sandhurst, Johannesburg.
+ * About page features section — Why Choose Proactive Therapy.
+ * Customized for Proactive Therapy, Johannesburg.
  */
 export function AboutFeatures({ className }: FeaturesSectionProps) {
   const blocks: FeatureBlock[] = [
@@ -26,7 +26,7 @@ export function AboutFeatures({ className }: FeaturesSectionProps) {
       id: "value-1",
       title: "Evidence-Based Treatment",
       description:
-        "Every treatment plan at Vitality is grounded in the latest clinical research and best practice. We don't rely on outdated methods — we use techniques that are proven to work. This means faster recovery times, better outcomes, and care you can trust. Our physiotherapists continuously update their knowledge to bring you the gold standard in physiotherapy.",
+        "Every treatment plan at Proactive Therapy is grounded in the latest clinical research and best practice. We don't rely on outdated methods — we use techniques that are proven to work. This means faster recovery times, better outcomes, and care you can trust. Our physiotherapists continuously update their knowledge to bring you the gold standard in physiotherapy.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
       imageAlt: "Physiotherapist applying therapeutic treatment",
       imagePosition: "right",

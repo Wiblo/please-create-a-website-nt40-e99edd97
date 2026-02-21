@@ -1,4 +1,4 @@
-# Brand Guide — Vitality Physiotherapy
+# Brand Guide — Proactive Therapy
 
 ## Overview
 
