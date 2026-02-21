@@ -1,8 +1,8 @@
-# Brand Guide
+# Brand Guide — Vitality Physiotherapy
 
 ## Overview
 
-Professional, trustworthy aesthetic for local service businesses. Blue conveys reliability and calm; warm neutrals prevent clinical coldness. Color is used sparingly - the UI is predominantly neutral with blue reserved for key actions.
+Professional, healing aesthetic for a physiotherapy clinic in Johannesburg. Purple conveys expertise, wellness, and calm authority. The palette is predominantly neutral with purple reserved for key actions and brand moments — sophisticated without being overpowering.
 
 ## Colors
 
@@ -10,8 +10,8 @@ Professional, trustworthy aesthetic for local service businesses. Blue conveys r
 
 | Token | Purpose | Usage |
 |-------|---------|-------|
-| **Primary** | Buttons, links, CTAs | Main brand color - use sparingly for key actions |
-| **Secondary** | Subtle backgrounds | Footer, FAQ cards, alternate sections |
+| **Primary** | Buttons, links, CTAs | Rich purple — use sparingly for key actions |
+| **Secondary** | Subtle backgrounds | FAQ cards, alternate sections, soft highlights |
 | **Accent** | Hover states | Interactive element highlights |
 
 ### Neutral Palette
@@ -19,7 +19,7 @@ Professional, trustworthy aesthetic for local service businesses. Blue conveys r
 | Token | Purpose |
 |-------|---------|
 | **Background** | Page background (white) |
-| **Foreground** | Body text (dark with blue undertone) |
+| **Foreground** | Body text (dark with subtle purple undertone) |
 | **Muted** | Disabled states, quiet backgrounds |
 | **Muted Foreground** | Secondary text, captions |
 | **Border** | Dividers, input borders |
@@ -30,41 +30,41 @@ Professional, trustworthy aesthetic for local service businesses. Blue conveys r
 
 ```css
 --background: oklch(0.995 0 0);
---foreground: oklch(0.15 0.01 240);
---primary: oklch(0.55 0.12 240);
+--foreground: oklch(0.15 0.01 300);
+--primary: oklch(0.50 0.20 300);
 --primary-foreground: oklch(0.98 0 0);
---secondary: oklch(0.82 0.03 240);
---secondary-foreground: oklch(0.2 0.02 240);
---muted: oklch(0.96 0.01 240);
---muted-foreground: oklch(0.45 0.02 240);
---accent: oklch(0.94 0.03 240);
---accent-foreground: oklch(0.2 0.02 240);
---border: oklch(0.91 0.01 240);
---ring: oklch(0.55 0.12 240);
+--secondary: oklch(0.90 0.04 300);
+--secondary-foreground: oklch(0.25 0.06 300);
+--muted: oklch(0.96 0.01 300);
+--muted-foreground: oklch(0.48 0.03 300);
+--accent: oklch(0.93 0.04 300);
+--accent-foreground: oklch(0.25 0.06 300);
+--border: oklch(0.90 0.02 300);
+--ring: oklch(0.50 0.20 300);
 ```
 
 #### Dark Mode
 
 ```css
---background: oklch(0.14 0.015 240);
---foreground: oklch(0.96 0.005 240);
---primary: oklch(0.7 0.12 240);
---primary-foreground: oklch(0.14 0.015 240);
---secondary: oklch(0.22 0.02 240);
---secondary-foreground: oklch(0.96 0.005 240);
---muted: oklch(0.22 0.02 240);
---muted-foreground: oklch(0.65 0.02 240);
---accent: oklch(0.26 0.04 240);
---accent-foreground: oklch(0.96 0.005 240);
+--background: oklch(0.13 0.015 300);
+--foreground: oklch(0.96 0.005 300);
+--primary: oklch(0.72 0.18 300);
+--primary-foreground: oklch(0.13 0.015 300);
+--secondary: oklch(0.22 0.03 300);
+--secondary-foreground: oklch(0.96 0.005 300);
+--muted: oklch(0.22 0.02 300);
+--muted-foreground: oklch(0.65 0.03 300);
+--accent: oklch(0.26 0.05 300);
+--accent-foreground: oklch(0.96 0.005 300);
 --border: oklch(1 0 0 / 10%);
---ring: oklch(0.7 0.12 240);
+--ring: oklch(0.72 0.18 300);
 ```
 
 ### Color Hue Reference
 
-- **Hue 240** = Blue (primary brand color)
-- **Chroma 0.12** = Moderate saturation (professional, not flashy)
-- **Chroma 0.01-0.03** = Very subtle tint (for neutrals)
+- **Hue 300** = Purple / violet (primary brand color)
+- **Chroma 0.20** = Rich saturation (vibrant but professional)
+- **Chroma 0.01-0.04** = Very subtle purple tint (for neutrals)
 
 ## Typography
 
@@ -74,19 +74,6 @@ Professional, trustworthy aesthetic for local service businesses. Blue conveys r
 |------|------|-----------------|
 | **Headings** | Geist Sans | Clean, modern, geometric |
 | **Body** | Geist Sans | Same family for consistency |
-
-### Implementation
-
-Fonts are loaded via `next/font/google` in `app/layout.tsx`:
-
-```tsx
-import { Geist } from 'next/font/google'
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-```
 
 ## Shape & Space
 
@@ -100,7 +87,7 @@ const geistSans = Geist({
 | `--radius-xl` | `1rem` | Large containers |
 | `--radius-4xl` | `2rem` | Hero sections, major blocks |
 
-**Feel**: Balanced - friendly but professional. Not too sharp, not too soft.
+**Feel**: Balanced — professional yet approachable. Rounded enough to feel welcoming, structured enough to convey expertise.
 
 ### Spacing
 
@@ -113,10 +100,11 @@ Use Tailwind's default spacing scale. Key patterns:
 
 ### Do
 
-- Use primary color only for buttons, links, and key CTAs
-- Keep backgrounds neutral (white, light gray)
-- Add subtle blue undertones to grays for cohesion
-- Use generous whitespace
+- Use primary purple only for buttons, links, and key CTAs
+- Keep backgrounds neutral (white, light lavender-gray)
+- Add subtle purple undertones to grays for cohesion
+- Use high-quality physiotherapy and lifestyle images
+- Use generous whitespace — the clinic is clean and calm
 - Maintain strong contrast for readability
 
 ### Don't
@@ -124,8 +112,8 @@ Use Tailwind's default spacing scale. Key patterns:
 - Don't use gradients (solid colors only)
 - Don't use glow effects
 - Don't overuse the primary color
-- Don't use pure black (#000) - use the foreground token
-- Don't use highly saturated colors
+- Don't use pure black (#000) — use the foreground token
+- Don't use highly saturated or neon colors
 
 ## Component Patterns
 
@@ -152,12 +140,19 @@ className="bg-card text-card-foreground border border-border rounded-lg"
 
 ```tsx
 // For sections needing visual separation
-className="bg-secondary/10"
+className="bg-secondary/30"
 ```
+
+## Tone & Voice
+
+- **Professional but warm** — expert care, not cold or clinical
+- **Confident** — use active language, "We treat", "You'll recover"
+- **Local** — Johannesburg references, South African context (medical aid, rands)
+- **Empowering** — focus on recovery outcomes and getting back to life
 
 ## Accessibility
 
-- Primary on white: ~4.7:1 contrast ratio (WCAG AA)
-- Foreground on background: ~12:1 contrast ratio (WCAG AAA)
+- Primary on white: meets WCAG AA contrast ratio
+- Foreground on background: WCAG AAA
 - All interactive elements have visible focus states
 - Minimum touch target: 44x44px

@@ -17,36 +17,36 @@ export interface FeaturesSectionProps {
 }
 
 /**
- * About page features section with alternating image/text layout.
- * Edit the blocks array below to customize for your business.
+ * About page features section — Why Choose Vitality Physiotherapy.
+ * Customized for Vitality Physiotherapy, Sandhurst, Johannesburg.
  */
 export function AboutFeatures({ className }: FeaturesSectionProps) {
   const blocks: FeatureBlock[] = [
     {
       id: "value-1",
-      title: "Our Mission",
+      title: "Evidence-Based Treatment",
       description:
-        "We are driven by a simple yet powerful mission: to help our clients achieve their goals and improve their lives. Every decision we make is guided by this commitment to your success and well-being.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop",
-      imageAlt: "Team collaboration meeting",
+        "Every treatment plan at Vitality is grounded in the latest clinical research and best practice. We don't rely on outdated methods — we use techniques that are proven to work. This means faster recovery times, better outcomes, and care you can trust. Our physiotherapists continuously update their knowledge to bring you the gold standard in physiotherapy.",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      imageAlt: "Physiotherapist applying therapeutic treatment",
       imagePosition: "right",
     },
     {
       id: "value-2",
-      title: "Our Values",
+      title: "Personalised Care Plans",
       description:
-        "Integrity, excellence, and compassion form the foundation of everything we do. We believe in treating every client with respect and providing honest, transparent service that you can trust.",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop",
-      imageAlt: "Professional team discussion",
+        "No two patients are the same, and neither are their treatment plans. We take a thorough look at your full history, movement patterns, lifestyle, and goals before recommending any treatment. Your plan is built entirely around you — not a generic template. As you progress, we adjust your programme to keep you moving forward.",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
+      imageAlt: "One-on-one physiotherapy consultation",
       imagePosition: "left",
     },
     {
       id: "value-3",
-      title: "Our Commitment",
+      title: "Education & Long-Term Prevention",
       description:
-        "We are committed to continuous improvement and staying at the forefront of our industry. Our team regularly participates in training and education to ensure we provide you with the best possible service.",
-      image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&h=800&fit=crop",
-      imageAlt: "Professional development",
+        "We believe that an informed patient heals faster and stays healthier. That's why we invest time in educating you about your condition, what's causing your pain, and how to prevent it from returning. We equip you with exercises, posture tips, and lifestyle advice so you leave our clinic with the tools to look after yourself long after treatment ends.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
+      imageAlt: "Physiotherapist guiding a patient through rehabilitation exercises",
       imagePosition: "right",
     },
   ]

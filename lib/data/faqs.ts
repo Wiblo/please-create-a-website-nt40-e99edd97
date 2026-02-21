@@ -18,43 +18,43 @@ export interface FAQ {
 /**
  * Frequently asked questions.
  * Edit this array to add, remove, or modify FAQs.
- *
- * Tips:
- * - Keep answers concise but complete
- * - Use natural language that matches how customers ask
- * - Order by most commonly asked first
- * - Include questions that address common objections
  */
 export const faqs: FAQ[] = [
   {
     id: "faq-1",
-    question: "What is your first frequently asked question?",
+    question: "Do I need a doctor's referral to see a physiotherapist?",
     answer:
-      "This is the answer to your first FAQ. Provide a clear, helpful response that addresses the customer's concern. Keep it concise but complete.",
+      "No, you do not need a referral to see us. Physiotherapists are primary healthcare practitioners, which means you can book directly with us without seeing a GP first. However, if you are claiming through medical aid, some plans do require a referral, so it's worth checking with your scheme beforehand.",
   },
   {
     id: "faq-2",
-    question: "What is your second frequently asked question?",
+    question: "Does medical aid cover physiotherapy?",
     answer:
-      "This is the answer to your second FAQ. You can include details about your services, policies, or anything customers commonly ask about.",
+      "Most South African medical aid schemes cover physiotherapy, though the amount of cover and number of sessions allowed varies by plan. We are registered with all major medical aids. We recommend contacting your medical aid to confirm your benefits before your first appointment. We can assist with submitting claims on your behalf.",
   },
   {
     id: "faq-3",
-    question: "What is your third frequently asked question?",
+    question: "What should I bring to my first appointment?",
     answer:
-      "This is the answer to your third FAQ. Consider including information about pricing, availability, or what customers can expect.",
+      "Please bring your medical aid card (if applicable), any relevant X-rays, MRI scans, or doctor's reports, and wear comfortable, loose-fitting clothing that allows easy access to the area being treated. For lower limb or back assessments, shorts are recommended. If you have had previous physiotherapy, any notes from that treatment are also helpful.",
   },
   {
     id: "faq-4",
-    question: "What is your fourth frequently asked question?",
+    question: "How long is a typical physiotherapy session?",
     answer:
-      "This is the answer to your fourth FAQ. Address common concerns or objections that potential customers might have.",
+      "Your initial assessment and first treatment session is usually 60 minutes. This allows us to thoroughly assess your condition, discuss your goals, and begin treatment. Follow-up sessions are typically 45 minutes. Some specialised treatments, such as dry needling only or a short exercise check-in, may be shorter.",
   },
   {
     id: "faq-5",
-    question: "What is your fifth frequently asked question?",
+    question: "How many sessions will I need?",
     answer:
-      "This is the answer to your fifth FAQ. Include any additional information that helps customers make a decision.",
+      "This depends on your condition, its severity, and how your body responds to treatment. Acute injuries may resolve in 3–6 sessions, while chronic or post-surgical conditions can take longer. After your initial assessment, we will give you a realistic estimate and review your progress regularly. Our goal is always to get you better as efficiently as possible.",
+  },
+  {
+    id: "faq-6",
+    question: "What conditions do you treat?",
+    answer:
+      "We treat a wide range of musculoskeletal and neurological conditions including back and neck pain, sports injuries, post-surgical rehabilitation, joint pain, headaches, vertigo and balance disorders, sciatica, muscle strains and ligament sprains, and much more. If you are unsure whether we can help your condition, call us and we will advise you.",
   },
 ]
 

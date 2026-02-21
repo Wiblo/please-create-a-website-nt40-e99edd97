@@ -16,12 +16,17 @@ const overlayOpacity = 20
 
 /** Hero content - edit these values directly */
 const heroContent = {
-  subtitle: `Welcome to ${businessInfo.name}`,
-  title: "Your Compelling Headline Goes Here",
-  backgroundImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop",
-  backgroundImageAlt: "Professional business environment",
-  ctaText: "Get Started",
+  subtitle: businessInfo.tagline,
+  title: "Move Better. Live Without Pain.",
+  description:
+    "Expert physiotherapy in Johannesburg. We treat sports injuries, back pain, post-surgical recovery, and more — getting you back to the life you love.",
+  backgroundImage:
+    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&h=1080&fit=crop",
+  backgroundImageAlt: "Physiotherapist treating a patient in a modern clinic",
+  ctaText: "Book Your Appointment",
   ctaUrl: businessInfo.bookingUrl || "/contact",
+  secondaryCtaText: "View Our Services",
+  secondaryCtaUrl: "/services",
 }
 
 // =============================================================================
@@ -88,11 +93,16 @@ export function HeroSection({ className }: HeroSectionProps) {
               >
                 {heroContent.title}
               </h1>
+
+              {/* Description */}
+              <p className="max-w-xl text-base text-white/80 md:text-lg">
+                {heroContent.description}
+              </p>
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex">
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4">
             <Link
               href={heroContent.ctaUrl}
               className="group relative flex min-h-12 items-center justify-center rounded-lg bg-primary px-6 py-3 font-medium text-white transition-colors ease-in-out hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -112,6 +122,13 @@ export function HeroSection({ className }: HeroSectionProps) {
                   </span>
                 </span>
               </span>
+            </Link>
+
+            <Link
+              href={heroContent.secondaryCtaUrl}
+              className="group flex min-h-12 items-center justify-center rounded-lg border border-white/40 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              {heroContent.secondaryCtaText}
             </Link>
           </div>
         </div>

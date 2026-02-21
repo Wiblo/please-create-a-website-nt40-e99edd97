@@ -1,13 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
-// import { Navbar } from "@/components/layout/Navbar"
-// import { Footer } from "@/components/layout/Footer"
+import { Navbar } from "@/components/layout/Navbar"
+import { Footer } from "@/components/layout/Footer"
 import { JsonLd, generateLocalBusinessSchema } from "@/lib/seo/json-ld"
 import { generateRootMetadata } from "@/lib/seo/metadata"
 import { WibloDesignBridge } from "@/components/wiblo-design-bridge"
 
 const geistSans = Geist({
   subsets: ["latin"],
+  variable: "--font-geist-sans",
 })
 
 const geistMono = Geist_Mono({
@@ -49,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={geistSans.className}>
-      <body className={`${geistMono.variable} antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body>
         <WibloDesignBridge />
 
         {/* Skip link for keyboard navigation */}
@@ -64,13 +65,11 @@ export default function RootLayout({
         {/* LocalBusiness JSON-LD for SEO */}
         <JsonLd data={generateLocalBusinessSchema()} />
 
-        {/* TODO: Uncomment Navbar after customizing for the business */}
-        {/* <Navbar /> */}
+        <Navbar />
 
         <main id="main-content">{children}</main>
 
-        {/* TODO: Uncomment Footer after customizing for the business */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

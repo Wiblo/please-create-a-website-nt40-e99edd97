@@ -6,30 +6,30 @@
  */
 export const businessInfo = {
   // Core Business Details
-  name: "Your Business Name",
-  tagline: "Your compelling tagline goes here",
+  name: "Vitality Physiotherapy",
+  tagline: "Restoring Movement, Rebuilding Lives",
   description:
-    "A brief description of what your business does and who you serve. This appears in the footer and meta descriptions.",
+    "Vitality Physiotherapy is Johannesburg's trusted physiotherapy clinic, offering expert treatment for sports injuries, back and neck pain, post-surgical rehabilitation, and more. We help you move better and live pain-free.",
 
   // Contact Information
-  phone: "(555) 000-0000",
-  phoneSecondary: "", // Optional secondary phone number
-  email: "hello@example.com",
+  phone: "+27 11 884 5500",
+  phoneSecondary: "+27 82 456 7890",
+  email: "info@vitalityphysio.co.za",
 
   // Physical Location
   address: {
-    street: "123 Main Street",
-    area: "", // Optional: neighborhood, suite, or building name
-    city: "Your City",
-    state: "ST",
-    zip: "00000",
-    country: "US",
+    street: "14 Rivonia Road",
+    area: "Sandhurst",
+    city: "Johannesburg",
+    state: "Gauteng",
+    zip: "2196",
+    country: "ZA",
   },
 
   // Coordinates for maps (optional - set to 0 if unknown)
   geo: {
-    latitude: 0,
-    longitude: 0,
+    latitude: -26.1076,
+    longitude: 28.0567,
   },
 
   // Google Maps configuration
@@ -37,40 +37,40 @@ export const businessInfo = {
     /** Google Maps Place ID (find at: https://developers.google.com/maps/documentation/places/web-service/place-id) */
     placeId: "",
     /** Display name for the location on maps */
-    locationName: "Your Business Name",
+    locationName: "Vitality Physiotherapy Johannesburg",
     /** Google Maps API key (optional, for embed without place ID) */
     apiKey: "",
   },
 
   // Business Hours
   hours: {
-    monday: "9:00 AM - 5:00 PM",
-    tuesday: "9:00 AM - 5:00 PM",
-    wednesday: "9:00 AM - 5:00 PM",
-    thursday: "9:00 AM - 5:00 PM",
-    friday: "9:00 AM - 5:00 PM",
-    saturday: "Closed",
+    monday: "7:30 AM - 6:00 PM",
+    tuesday: "7:30 AM - 6:00 PM",
+    wednesday: "7:30 AM - 6:00 PM",
+    thursday: "7:30 AM - 6:00 PM",
+    friday: "7:30 AM - 5:00 PM",
+    saturday: "8:00 AM - 1:00 PM",
     sunday: "Closed",
   } as Record<string, string>,
 
   // Timezone for open/closed status calculation
-  timezone: "America/New_York",
+  timezone: "Africa/Johannesburg",
 
   // Social Media (leave empty string if not used)
   social: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://facebook.com/vitalityphysioJHB",
+    instagram: "https://instagram.com/vitalityphysioJHB",
     twitter: "",
-    linkedin: "",
+    linkedin: "https://linkedin.com/company/vitality-physiotherapy",
     youtube: "",
   },
 
   // Website
-  url: "https://example.com",
+  url: "https://vitalityphysio.co.za",
   logo: "/logo.png",
 
   // Booking (leave empty string if no booking system)
-  bookingUrl: "https://example.com/book",
+  bookingUrl: "/contact",
   showBookingButton: true, // Set to false to hide booking buttons in navbar/footer
 
   // Optional: Price range for schema.org ($, $$, $$$, $$$$)
@@ -101,7 +101,7 @@ export function getGoogleMapsEmbedUrl(): string {
   }
 
   // Fall back to address search
-  const addressString = `${address.street}, ${address.city}, ${address.state} ${address.zip}`
+  const addressString = `${address.street}, ${address.area}, ${address.city}, ${address.state} ${address.zip}`
   return `https://www.google.com/maps/embed/v1/place?key=${maps.apiKey || "AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"}&q=${encodeURIComponent(addressString)}`
 }
 
@@ -115,7 +115,7 @@ export function getGoogleMapsDirectionsUrl(): string {
     return `https://www.google.com/maps/dir/?api=1&destination_place_id=${maps.placeId}`
   }
 
-  const addressString = `${address.street}, ${address.city}, ${address.state} ${address.zip}`
+  const addressString = `${address.street}, ${address.area}, ${address.city}, ${address.state} ${address.zip}`
   return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addressString)}`
 }
 

@@ -3,13 +3,13 @@
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import Image from "next/image"
 import {
   Menu,
   X,
   ChevronRight,
   ArrowRight,
   Phone,
+  Activity,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { businessInfo, getPhoneLink } from "@/lib/data/business-info"
@@ -44,14 +44,9 @@ export function Navbar() {
                 href="/"
                 className="flex items-end gap-2"
               >
-                <Image
-                  src={businessInfo.logo}
-                  alt={`${businessInfo.name} Logo`}
-                  width={64}
-                  height={64}
-                  className="h-10 w-10 sm:h-16 sm:w-16 object-contain"
-                  priority
-                />
+                <div className="h-10 w-10 sm:h-16 sm:w-16 flex items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
+                  <Activity className="h-5 w-5 sm:h-8 sm:w-8 text-primary" aria-hidden="true" />
+                </div>
                 <div className="pb-0.5">
                   <p className="text-base sm:text-2xl font-signature font-semibold text-foreground leading-tight whitespace-nowrap">
                     {businessInfo.name}

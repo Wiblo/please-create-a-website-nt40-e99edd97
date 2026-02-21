@@ -8,18 +8,19 @@ import { cn } from "@/lib/utils"
 // =============================================================================
 
 /** Hero height: "large" | "medium" | "small" */
-const size: "large" | "medium" | "small" = "small"
+const size: "large" | "medium" | "small" = "medium"
 
 /** Overlay opacity: 0-100 (percentage) */
-const overlayOpacity = 20
+const overlayOpacity = 35
 
 /** Hero content - edit these values directly */
 const heroContent = {
-  subtitle: "What We Offer",
-  title: "Our Services",
-  backgroundImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop",
-  backgroundImageAlt: "Our services",
-  ctaText: "Contact Us",
+  subtitle: "Comprehensive Care",
+  title: "Our Physiotherapy Services",
+  description: "Comprehensive physiotherapy treatments for every stage of your recovery — from acute injury management to long-term rehabilitation.",
+  backgroundImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&h=1080&fit=crop",
+  backgroundImageAlt: "Physiotherapist providing hands-on treatment to a patient",
+  ctaText: "Book an Appointment",
   ctaUrl: "/contact",
 }
 
@@ -72,7 +73,7 @@ export function ServicesHero({ className }: ServicesHeroProps) {
         {/* Content */}
         <div className="relative flex h-full flex-1 flex-col justify-end gap-8 p-8 pt-52 lg:p-20 lg:pb-20">
           <div className="max-w-200 bg-transparent">
-            <div className="flex flex-col gap-6 text-balance">
+            <div className="flex flex-col gap-6">
               {/* Subtitle */}
               <span className="text-white">
                 <span className="border-l-4 border-primary pl-4 text-lg font-medium md:text-xl">
@@ -82,11 +83,18 @@ export function ServicesHero({ className }: ServicesHeroProps) {
 
               {/* Headline */}
               <h1
-                className="font-heading text-3xl leading-tight text-white md:text-4xl lg:text-5xl"
+                className="font-heading text-balance text-3xl leading-tight text-white md:text-4xl lg:text-5xl"
                 style={{ fontWeight: 700 }}
               >
                 {heroContent.title}
               </h1>
+
+              {/* Description */}
+              {heroContent.description && (
+                <p className="max-w-2xl text-pretty text-base text-white/90 md:text-lg">
+                  {heroContent.description}
+                </p>
+              )}
             </div>
           </div>
 

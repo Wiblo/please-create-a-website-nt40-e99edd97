@@ -26,45 +26,46 @@ export interface GalleryContent {
 /**
  * Gallery content configuration.
  * Edit this to customize the gallery section.
- *
- * Tips:
- * - Use descriptive alt text for each image
- * - Keep image sizes consistent for best grid appearance
- * - Recommended: 6 images for 3-column, 4 or 8 for 4-column layouts
  */
 export const galleryContent: GalleryContent = {
-  title: "Our Gallery",
-  subtitle: "Take a look at our space and see what we have to offer.",
+  title: "Our Clinic",
+  subtitle: "A modern, welcoming space designed for your recovery and comfort.",
   items: [
     {
       id: "gallery-1",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=800&fit=crop",
-      alt: "Placeholder image 1",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=800&fit=crop",
+      alt: "Physiotherapist performing manual therapy treatment",
+      caption: "Expert Manual Therapy",
     },
     {
       id: "gallery-2",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=800&fit=crop",
-      alt: "Placeholder image 2",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop",
+      alt: "Sports rehabilitation session in our clinic",
+      caption: "Sports Rehabilitation",
     },
     {
       id: "gallery-3",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=800&fit=crop",
-      alt: "Placeholder image 3",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=800&fit=crop",
+      alt: "Modern physiotherapy treatment room",
+      caption: "Modern Treatment Rooms",
     },
     {
       id: "gallery-4",
-      image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&h=800&fit=crop",
-      alt: "Placeholder image 4",
+      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=800&fit=crop",
+      alt: "Dry needling treatment being performed",
+      caption: "Dry Needling Therapy",
     },
     {
       id: "gallery-5",
-      image: "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=800&fit=crop",
-      alt: "Placeholder image 5",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&h=800&fit=crop",
+      alt: "Physiotherapy exercise programme session",
+      caption: "Therapeutic Exercise",
     },
     {
       id: "gallery-6",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=800&fit=crop",
-      alt: "Placeholder image 6",
+      image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800&h=800&fit=crop",
+      alt: "Welcoming reception area of our clinic",
+      caption: "Welcoming Reception",
     },
   ],
 }

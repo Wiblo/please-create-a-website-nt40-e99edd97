@@ -1,15 +1,20 @@
-import Image from "next/image"
+import {
+  Users,
+  ShieldCheck,
+  FlaskConical,
+  MapPin,
+  CalendarCheck,
+  ClipboardList,
+} from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Container } from "@/components/layout/Container"
 import { SectionWrapper } from "@/components/layout/SectionWrapper"
 
-interface FeatureBlock {
+interface Feature {
   id: string
+  icon: React.ReactNode
   title: string
   description: string
-  image: string
-  imageAlt: string
-  imagePosition: "left" | "right"
 }
 
 export interface FeaturesSectionProps {
@@ -17,94 +22,93 @@ export interface FeaturesSectionProps {
 }
 
 /**
- * Homepage features section with alternating image/text layout.
- * Edit the blocks array below to customize for your business.
+ * "Why Choose Us" features grid section.
+ * Edit the features array below to customize for your business.
  */
 export function FeaturesSection({ className }: FeaturesSectionProps) {
-  const blocks: FeatureBlock[] = [
+  const features: Feature[] = [
     {
-      id: "feature-1",
-      title: "Why Choose Us",
+      id: "expert-team",
+      icon: <Users className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Expert Team",
       description:
-        "We bring years of experience and dedication to every project. Our team is committed to delivering exceptional results that exceed your expectations. We take the time to understand your unique needs and tailor our approach accordingly.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop",
-      imageAlt: "Team collaboration",
-      imagePosition: "right",
+        "Our physiotherapists hold postgraduate qualifications and undergo continuous professional development to stay at the forefront of musculoskeletal care.",
     },
     {
-      id: "feature-2",
-      title: "Our Approach",
+      id: "medical-aid",
+      icon: <ShieldCheck className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Medical Aid Registered",
       description:
-        "We believe in a personalized approach that puts you first. From your initial consultation to the final result, we ensure clear communication and transparency at every step. Your satisfaction is our top priority.",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop",
-      imageAlt: "Professional consultation",
-      imagePosition: "left",
+        "We are registered with all major South African medical aids including Discovery, Momentum, Bonitas, and Gems — so you can claim with confidence.",
     },
     {
-      id: "feature-3",
-      title: "Results You Can Trust",
+      id: "evidence-based",
+      icon: <FlaskConical className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Evidence-Based Care",
       description:
-        "Our track record speaks for itself. We have helped countless clients achieve their goals and we are ready to help you too. Experience the difference that expertise and genuine care can make.",
-      image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&h=800&fit=crop",
-      imageAlt: "Successful results",
-      imagePosition: "right",
+        "Every treatment plan is grounded in the latest clinical research. We combine hands-on therapy with proven rehabilitation techniques for lasting results.",
+    },
+    {
+      id: "location",
+      icon: <MapPin className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Convenient Location",
+      description:
+        "Situated in Sandhurst, Johannesburg, our clinic is easily accessible from Sandton, Rosebank, Houghton, and surrounding northern suburbs.",
+    },
+    {
+      id: "appointments",
+      icon: <CalendarCheck className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Same-Week Appointments",
+      description:
+        "We understand that pain can't wait. We offer same-week and often same-day appointments so you can start your recovery without delay.",
+    },
+    {
+      id: "personalised",
+      icon: <ClipboardList className="h-6 w-6 text-primary" aria-hidden="true" />,
+      title: "Personalised Treatment Plans",
+      description:
+        "No two patients are the same. We take time to understand your lifestyle, goals, and medical history before designing a plan tailored specifically to you.",
     },
   ]
 
   return (
-    <SectionWrapper className={cn("bg-background", className)}>
+    <SectionWrapper className={cn("bg-secondary/30", className)}>
       <Container>
-        {blocks.map((block, index) => (
-          <div key={block.id} className={cn(index > 0 && "mt-20 md:mt-32")}>
+        {/* Section Header */}
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <h2 className="font-heading mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+            Why Johannesburg Chooses Vitality
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            We combine clinical expertise, modern equipment, and genuine care to
+            deliver outcomes that get you back to doing what you love.
+          </p>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature) => (
             <div
-              className={cn(
-                "flex flex-col items-center gap-10 md:gap-20 xl:gap-[140px]",
-                block.imagePosition === "right"
-                  ? "md:flex-row-reverse"
-                  : "md:flex-row"
-              )}
+              key={feature.id}
+              className="flex flex-col gap-4 rounded-2xl border border-border bg-background p-6 shadow-sm"
             >
-              {/* Desktop Image */}
-              <div className="relative hidden aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:flex md:max-h-[300px] md:max-w-[300px] xl:max-h-[520px] xl:max-w-[520px]">
-                <Image
-                  src={block.image}
-                  alt={block.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 300px, 520px"
-                />
+              {/* Icon */}
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                {feature.icon}
               </div>
 
-              {/* Content */}
-              <div className="flex w-full flex-col gap-8">
-                {/* Heading */}
-                <div className="flex w-full justify-center md:justify-start">
-                  <h2 className="font-heading text-balance text-center text-3xl font-bold text-foreground md:text-left md:text-4xl lg:text-5xl">
-                    {block.title}
-                  </h2>
-                </div>
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-foreground">
+                {feature.title}
+              </h3>
 
-                {/* Mobile Image */}
-                <div className="relative aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:hidden">
-                  <Image
-                    src={block.image}
-                    alt={block.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
-                  />
-                </div>
-
-                {/* Description */}
-                <div className="flex w-full flex-col gap-8">
-                  <p className="text-base font-medium leading-relaxed text-muted-foreground">
-                    {block.description}
-                  </p>
-                </div>
-              </div>
+              {/* Description */}
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {feature.description}
+              </p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </Container>
     </SectionWrapper>
   )

@@ -15,43 +15,43 @@ const showPlaceholder = false
 
 /** Gallery content - edit these values directly */
 const galleryContent = {
-  title: "Our Gallery",
-  subtitle: "Take a look at our space and see what we have to offer.",
+  title: "Our Clinic",
+  subtitle: "A modern, welcoming physiotherapy space in the heart of Sandhurst, Johannesburg.",
   items: [
     {
       id: "gallery-1",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=800&fit=crop",
-      alt: "Modern office space with natural lighting",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=800&fit=crop",
+      alt: "Physiotherapist performing hands-on treatment",
       caption: undefined as string | undefined,
     },
     {
       id: "gallery-2",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=800&fit=crop",
-      alt: "Professional meeting room",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=800&fit=crop",
+      alt: "Physiotherapy consultation and assessment",
       caption: undefined as string | undefined,
     },
     {
       id: "gallery-3",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=800&fit=crop",
-      alt: "Collaborative workspace",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop",
+      alt: "Therapeutic physiotherapy treatment session",
       caption: undefined as string | undefined,
     },
     {
       id: "gallery-4",
-      image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&h=800&fit=crop",
-      alt: "Reception area",
+      image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800&h=800&fit=crop",
+      alt: "Modern rehabilitation equipment in clinic",
       caption: undefined as string | undefined,
     },
     {
       id: "gallery-5",
-      image: "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=800&fit=crop",
-      alt: "Team collaboration space",
+      image: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?w=800&h=800&fit=crop",
+      alt: "Exercise rehabilitation session with physiotherapist",
       caption: undefined as string | undefined,
     },
     {
       id: "gallery-6",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=800&fit=crop",
-      alt: "Modern interior design",
+      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=800&fit=crop",
+      alt: "Modern physiotherapy treatment room",
       caption: undefined as string | undefined,
     },
   ],
